@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import projects from "./data/projects.js";
 
 dotenv.config();
 
@@ -16,10 +15,6 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({ status: "ok", message: "Portfolio API" });
-});
-
-app.get("/api/projects", (req, res) => {
-  res.json(projects);
 });
 
 const PORT = process.env.PORT || 4000;
