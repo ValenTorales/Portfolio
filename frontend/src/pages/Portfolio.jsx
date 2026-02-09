@@ -15,7 +15,7 @@ export default function Portfolio() {
       </section>
 
       <section className="hero__container">
-        <div className="destacados">
+        <div className="destacados about">
           <h2>Proyectos Destacados</h2>
 
           <div className="grid grid-2-lg">
@@ -277,7 +277,7 @@ export default function Portfolio() {
               </div>
             </article>
 
-            <article className="dest project project--compact">...</article>
+            {/* <article className="dest project project--compact">...</article> */}
           </div>
         </div>
       </section>
