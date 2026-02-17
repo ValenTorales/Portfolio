@@ -7,6 +7,7 @@ import ProyectoViveroGreen from "./pages/Proyecto-vivero-green.jsx";
 import ProyectoCuentasCorrientes from "./pages/Proyecto-cuentas-corrientes.jsx";
 import ProyectoAlcorte from "./pages/Proyecto-alcorte.jsx";
 import ProyectoJervalt from "./pages/Proyecto-jervalt.jsx";
+import ProyectoAguas from "./pages/Proyecto-agua-carlitos.jsx";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/proyecto-alcorte" element={<ProyectoAlcorte />} />
             <Route path="/proyecto-jervalt" element={<ProyectoJervalt />} />
             <Route path="/proyecto-cuentas-corrientes" element={<ProyectoCuentasCorrientes />} />
+            <Route path="/proyecto-agua-carlitos" element={<ProyectoAguas />} />
           </Routes>
         </main>
       </div>

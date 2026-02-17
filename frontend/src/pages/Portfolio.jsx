@@ -86,9 +86,11 @@ export default function Portfolio() {
                 </p>
 
                 <div className="about__chips">
-                  <span className="chip">React.js</span>
-                  <span className="chip">Axios</span>
                   <span className="chip">Node.js</span>
+                  <span className="chip">Express.js</span>
+                  <span className="chip">React.js</span>
+                  <span className="chip">Vite</span>
+                  <span className="chip">Axios</span>
                   <span className="chip">SQLite</span>
                 </div>
               </div>
@@ -161,8 +163,11 @@ export default function Portfolio() {
                 </p>
 
                 <div className="about__chips">
-                  <span className="chip">React.js</span>
                   <span className="chip">Node.js</span>
+                  <span className="chip">Express.js</span>
+                  <span className="chip">React.js</span>
+                  <span className="chip">Vite</span>
+                  <span className="chip">Axios</span>
                   <span className="chip">SQLite</span>
                 </div>
               </div>
@@ -176,6 +181,61 @@ export default function Portfolio() {
           <h2>Otros Proyectos</h2>
 
           <div className="grid grid-2-md grid-3-lg">
+
+            <article className="dest project project--compact">
+              <div className="project__media">
+                <img
+                  src="/aguas1.png"
+                  alt="App Aguas Carlitos - Cooperativa de Agua Potable"
+                  className="project__img --h48"
+                />
+              </div>
+
+              <div className="dest__header">
+                <h3 className="dest__title sm">Aplicación Web - Cooperativa de Agua Potable</h3>
+              </div>
+
+              <div className="dest__content">
+                <p className="muted small">
+                  Permite la gestión de clientes, facturación, reclamos, pagos en línea y reportes de consumo.
+                </p>
+
+                <div className="about__chips">
+                  <span className="chip">Node.js</span>
+                  <span className="chip">Express.js</span>
+                  <span className="chip">React.js</span>
+                  <span className="chip">Vite</span>
+                  <span className="chip">Axios</span>
+                  <span className="chip">PostgreSQL</span>
+                </div>
+
+                <div className="btns-project">
+                  <a
+                    className="btn btn--sm btn--outline btn__project"
+                    href="/proyecto-agua-carlitos"
+                    target="_self"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14L21 3" />
+                    </svg>
+                    <span>Ver</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
             <article className="dest project project--compact">
               <div className="project__media">
                 <img
@@ -195,8 +255,10 @@ export default function Portfolio() {
                 </p>
 
                 <div className="about__chips">
-                  <span className="chip">React.js</span>
                   <span className="chip">Node.js</span>
+                  <span className="chip">Express.js</span>
+                  <span className="chip">React.js</span>
+                  <span className="chip">SQLite</span>
                 </div>
 
                 <div className="btns-project">
@@ -246,8 +308,12 @@ export default function Portfolio() {
                 </p>
 
                 <div className="about__chips">
-                  <span className="chip">React.js</span>
                   <span className="chip">Node.js</span>
+                  <span className="chip">Express.js</span>
+                  <span className="chip">React.js</span>
+                  <span className="chip">Vite</span>
+                  <span className="chip">Axios</span>
+                  <span className="chip">MySQL</span>
                 </div>
 
                 <div className="btns-project">
@@ -276,8 +342,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </article>
-
-            {/* <article className="dest project project--compact">...</article> */}
           </div>
         </div>
       </section>
