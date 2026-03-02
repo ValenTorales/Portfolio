@@ -19,7 +19,7 @@ export default function Home() {
             <div className="hero__actions">
               <a href="/portafolio" className="btn btn--lg btn--accent">Ver Portfolio</a>
 
-              <a href="https://wa.me/5493454936747?text=Hola%20!%20Quiero%20iniciar%20mi%20proyecto." target="_blank" className="btn btn--lg btn--outline">
+              <a href="https://wa.me/5493454936747?text=Hola!%20Quiero%20iniciar%20mi%20proyecto." target="_blank" className="btn btn--lg btn--outline">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -48,13 +48,14 @@ export default function Home() {
 
               <div className="about__desc">
                 <p>
-                  Soy un desarrollador web freelancer apasionado por crear soluciones digitales innovadoras.
-                  Con más de 2 años de experiencia, me especializo en desarrollo frontend y backend utilizando
-                  las tecnologías más modernas.
+                  Soy Técnico Superior en Programación y me dedico a ayudar a negocios y emprendedores
+                  a llevar sus ideas al mundo digital. Trabajo como desarrollador freelance creando
+                  páginas web y sistemas que no solo se ven bien, sino que realmente funcionan y generan resultados.
                 </p>
                 <p>
-                  Mi enfoque se centra en entregar proyectos de alta calidad que no solo cumplan con los requisitos
-                  técnicos, sino que también proporcionen una experiencia excepcional al usuario final.
+                  Me enfoco en entender las necesidades de cada cliente para ofrecer soluciones claras,
+                  simples y efectivas. Mi objetivo es que cada proyecto transmita profesionalismo,
+                  confianza y una experiencia cómoda para quienes lo usan.
                 </p>
               </div>
 
@@ -155,7 +156,7 @@ export default function Home() {
         </p>
 
         <div className="footer__buttons">
-          <a href="https://wa.me/5493454936747?text=Hola%20!%20Quiero%20iniciar%20mi%20proyecto." target="_blank" className="footer__btn">
+          <a href="https://wa.me/5493454936747?text=Hola!%20Quiero%20iniciar%20mi%20proyecto." target="_blank" className="footer__btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

@@ -15,15 +15,15 @@ export default function Portfolio() {
       </section>
 
       <section className="hero__container">
-        <div className="destacados about">
-          <h2>Proyectos Destacados</h2>
+        <div className="destacados">
+          <h2>Páginas Web</h2>
 
           <div className="grid grid-2-lg">
             {/* ===== Proyecto 1 ===== */}
             <article className="dest project reveal">
               <div className="project__media">
                 <img
-                  src="/jervalt1.png"
+                  src="https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705737/jervalt1_dsfijg.png"
                   alt="Jervalt - Web para Ferretería"
                   className="project__img"
                 />
@@ -100,7 +100,7 @@ export default function Portfolio() {
             <article className="dest project reveal">
               <div className="project__media">
                 <img
-                  src="/barberia1.png"
+                  src="https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705720/barberia1_edqfoh.png"
                   alt="AlCorte Studio - Web para Barbería"
                   className="project__img"
                 />
@@ -178,10 +178,61 @@ export default function Portfolio() {
 
       <section className="about">
         <div className="about__container reveal">
-          <h2>Otros Proyectos</h2>
+          <h2>Software a medida</h2>
 
           <div className="grid grid-2-md grid-3-lg">
+            <article className="dest project project--compact">
+              <div className="project__media">
+                <img
+                  src="https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705896/market1_egytn4.png"
+                  alt="Software Supermarket - Gestión de Supermercados"
+                  className="project__img --h48"
+                />
+              </div>
 
+              <div className="dest__header">
+                <h3 className="dest__title sm">Software Supermarket - Gestión de Supermercados</h3>
+              </div>
+
+              <div className="dest__content">
+                <p className="muted small">
+                  Software de gestión para supermercados, con funcionalidades de inventario, ventas,
+                  clientes y reportes.
+                </p>
+
+                <div className="about__chips">
+                  <span className="chip">React.js</span>
+                  <span className="chip">Vite</span>
+                  <span className="chip">JavaScript ES</span>
+                  <span className="chip">Tailwind CSS 4</span>
+                </div>
+
+                <div className="btns-project">
+                  <a
+                    className="btn btn--sm btn--outline btn__project"
+                    href="/proyecto-supermarket"
+                    target="_self"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14L21 3" />
+                    </svg>
+                    <span>Ver</span>
+                  </a>
+                </div>
+              </div>
+            </article>
             <article className="dest project project--compact">
               <div className="project__media">
                 <img
@@ -213,58 +264,6 @@ export default function Portfolio() {
                   <a
                     className="btn btn--sm btn--outline btn__project"
                     href="/proyecto-agua-carlitos"
-                    target="_self"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.75"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <path d="M15 3h6v6" />
-                      <path d="M10 14L21 3" />
-                    </svg>
-                    <span>Ver</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article className="dest project project--compact">
-              <div className="project__media">
-                <img
-                  src="/cuentas1.png"
-                  alt="Gestión de Cuentas Corrientes"
-                  className="project__img --h48"
-                />
-              </div>
-
-              <div className="dest__header">
-                <h3 className="dest__title sm">Gestión de Cuentas Corrientes</h3>
-              </div>
-
-              <div className="dest__content">
-                <p className="muted small">
-                  Software simple, de una sola pagina, para gestionar cuentas corrientes de clientes
-                </p>
-
-                <div className="about__chips">
-                  <span className="chip">Node.js</span>
-                  <span className="chip">Express.js</span>
-                  <span className="chip">React.js</span>
-                  <span className="chip">SQLite</span>
-                </div>
-
-                <div className="btns-project">
-                  <a
-                    className="btn btn--sm btn--outline btn__project"
-                    href="/proyecto-cuentas-corrientes"
                     target="_self"
                     rel="noopener noreferrer"
                   >
@@ -342,6 +341,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </article>
+            
           </div>
         </div>
       </section>

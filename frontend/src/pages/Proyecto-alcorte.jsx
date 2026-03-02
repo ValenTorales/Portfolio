@@ -1,18 +1,19 @@
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import BlurCarousel from "../components/BlurCarousel";
+import BotonFlotante from "../components/BotonFlotante";
 
 export default function ProyectoAlcorte() {
   useRevealOnScroll();
 
   const images = [
-    { src: "/barberia1.png", alt: "Alcorte - 1" },
-    { src: "/barberia2.png", alt: "Alcorte - 2" },
-    { src: "/barberia3.png", alt: "Alcorte - 3" },
-    { src: "/barberia4.png", alt: "Alcorte - 4" },
-    { src: "/barberia5.png", alt: "Alcorte - 5" },
-    { src: "/barberia6.png", alt: "Alcorte - 6" },
-    { src: "/barberia7.png", alt: "Alcorte - 7" },
-    { src: "/barberia8.png", alt: "Alcorte - 8" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705720/barberia1_edqfoh.png", alt: "Alcorte - 1" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705721/barberia2_q9mchq.png", alt: "Alcorte - 2" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705721/barberia3_nnjjrx.png", alt: "Alcorte - 3" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705722/barberia4_cvmyy7.png", alt: "Alcorte - 4" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705723/barberia5_vus0aa.png", alt: "Alcorte - 5" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705724/barberia6_trztoh.png", alt: "Alcorte - 6" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705725/barberia7_qts9nk.png", alt: "Alcorte - 7" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705726/barberia8_nvcjaj.png", alt: "Alcorte - 8" },
   ];
 
   return (
@@ -25,7 +26,7 @@ export default function ProyectoAlcorte() {
           </p>
         </div>
       </section>
-
+      <BotonFlotante />
       {/* Carrusel */}
       <section className="about proy">
         <div className="about__container reveal">
@@ -47,7 +48,7 @@ export default function ProyectoAlcorte() {
           </p>
           <a
             className="footer__btn"
-            href="https://wa.me/5493454936747?text=Hola%20!%20Vengo%20del%20sitio%20Vivero%20Green."
+            href="https://wa.me/5493454936747?text=Hola!%20Quiero%20iniciar%20mi%20proyecto."
             target="_blank"
             rel="noreferrer"
           >

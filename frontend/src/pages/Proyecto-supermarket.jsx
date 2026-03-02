@@ -2,24 +2,25 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import BlurCarousel from "../components/BlurCarousel";
 import BotonFlotante from "../components/BotonFlotante";
 
-export default function ProyectoJervalt() {
+export default function ProyectoSupermarket() {
   useRevealOnScroll();
 
   const images = [
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705737/jervalt1_dsfijg.png", alt: "Jervalt - 1" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705738/jervalt2_ts6yan.png", alt: "Jervalt - 2" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705761/jervalt3_gsuxj1.png", alt: "Jervalt - 3" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705798/jervalt4_kvx1hs.png", alt: "Jervalt - 4" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705799/jervalt5_dmrbsz.png", alt: "Jervalt - 5" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705896/market1_egytn4.png", alt: "Supermarket - 1" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705897/market2_tkpruv.png", alt: "Supermarket - 2" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705897/market3_tz3ldk.png", alt: "Supermarket - 3" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705898/market4_qndzej.png", alt: "Supermarket - 4" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705899/market5_hpoblu.png", alt: "Supermarket - 5" },
   ];
 
   return (
     <div className="">
       <section className="hero">
         <div className="hero__container hero__inner">
-          <h1 className="hero__title">Jervalt - Web</h1>
+          <h1 className="hero__title">Software Supermarket - Gestión de Supermercados</h1>
           <p className="hero__subtitle">
-            Pagina web para un corralón-ferretería, en el cual se pueden ver los productos y servicios que ofrecen, además de un formulario de contacto y panel del administrador.
+            Software de gestión para supermercados, con funcionalidades de inventario, ventas,
+            clientes y reportes.
           </p>
         </div>
       </section>
@@ -32,7 +33,7 @@ export default function ProyectoJervalt() {
 
         <div className="about__container reveal">
           <p>
-            Proyecto desarrollado con React.js en el frontend y Node.js en el backend, utilizando SQLite como base de datos. Incluye un panel de administración para gestionar productos y catalogo.
+            Dentro de este sistema nuestro cliente puede tener un control total sobre su inventario, permitiéndole agregar, editar y eliminar productos de manera sencilla. Además, el sistema registra todas las ventas realizadas, lo que facilita la gestión financiera y mejora la experiencia del cliente.
           </p>
         </div>
       </section>

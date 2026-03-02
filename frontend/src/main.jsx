@@ -7,4 +7,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-)
+);
+const loader = document.getElementById("app-loader");
+if (loader) loader.style.display = "none";

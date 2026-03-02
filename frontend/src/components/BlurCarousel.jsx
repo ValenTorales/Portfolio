@@ -1,10 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
-/**
- * Blurred background carousel (fixed size, image contain, blurred backdrop)
- * - images: array of { src, alt?, style? }
- * - height: number (px) optional
- */
 export default function BlurCarousel({ images = [], height = 520 }) {
   const safeImages = useMemo(
     () =>
@@ -16,6 +11,7 @@ export default function BlurCarousel({ images = [], height = 520 }) {
   );
 
   const [index, setIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const touch = useRef({ x: 0, y: 0, active: false });
 
   const hasMany = safeImages.length > 1;
@@ -30,6 +26,25 @@ export default function BlurCarousel({ images = [], height = 520 }) {
     if (!hasMany) return;
     setIndex((i) => (i === safeImages.length - 1 ? 0 : i + 1));
   };
+
+  // ✅ cada vez que cambia el src, mostramos loader
+  useEffect(() => {
+    if (!current?.src) return;
+    setIsLoading(true);
+  }, [current?.src]);
+
+  // ✅ preload next/prev (recomendado)
+  useEffect(() => {
+    if (!safeImages.length) return;
+    const nextIndex = (index + 1) % safeImages.length;
+    const prevIndex = (index - 1 + safeImages.length) % safeImages.length;
+
+    [safeImages[nextIndex]?.src, safeImages[prevIndex]?.src].forEach((src) => {
+      if (!src) return;
+      const img = new Image();
+      img.src = src;
+    });
+  }, [index, safeImages]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -58,11 +73,9 @@ export default function BlurCarousel({ images = [], height = 520 }) {
     const dx = t.clientX - touch.current.x;
     const dy = t.clientY - touch.current.y;
 
-    // swipe horizontal
     if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
       dx > 0 ? prev() : next();
     }
-
     touch.current.active = false;
   };
 
@@ -86,12 +99,27 @@ export default function BlurCarousel({ images = [], height = 520 }) {
       {/* gradient */}
       <div className="bcar__shade" aria-hidden="true" />
 
+      {/* ✅ LOADER OVERLAY (jimu) */}
+      {isLoading && (
+        <div className="bcar__loaderOverlay" aria-hidden="true">
+          <div className="loader">
+            <div className="justify-content-center jimu-primary-loading"></div>
+          </div>
+        </div>
+      )}
+
       {/* main image */}
       <img
-        className="bcar__img"
+        key={current.src} // ✅ evita que quede la anterior pintada
+        className={`bcar__img ${isLoading ? "is-loading" : "is-loaded"}`}
         src={current.src}
         alt={current.alt || ""}
         style={current.style}
+        onLoad={() => setIsLoading(false)}
+        onError={() => setIsLoading(false)}
+        loading="eager"
+        decoding="async"
+        draggable="false"
       />
 
       {/* controls */}

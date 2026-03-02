@@ -1,17 +1,18 @@
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import BlurCarousel from "../components/BlurCarousel";
+import BotonFlotante from "../components/BotonFlotante";
 
 export default function ProyectoAguas() {
   useRevealOnScroll();
 
   const images = [
-    { src: "/aguas1.png", alt: "Aguas - 1" },
-    { src: "/aguas2.png", alt: "Aguas - 2" },
-    { src: "/aguas3.png", alt: "Aguas - 3" },
-    { src: "/aguas4.png", alt: "Aguas - 4" },
-    { src: "/aguas5.png", alt: "Aguas - 5" },
-    { src: "/aguas6.png", alt: "Aguas - 6" },
-    { src: "/aguas7.png", alt: "Aguas - 7" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705716/aguas1_hehke3.png", alt: "Aguas - 1" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705715/aguas2_g9ozvb.png", alt: "Aguas - 2" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705716/aguas3_vjwupg.png", alt: "Aguas - 3" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705717/aguas4_gmmfzp.png", alt: "Aguas - 4" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705717/aguas5_mftbn3.png", alt: "Aguas - 5" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705717/aguas6_nbxvhm.png", alt: "Aguas - 6" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705718/aguas7_bfqujw.png", alt: "Aguas - 7" },
   ];
 
   return (
@@ -24,7 +25,7 @@ export default function ProyectoAguas() {
           </p>
         </div>
       </section>
-
+      <BotonFlotante />
       {/* Carrusel */}
       <section className="about proy">
         <div className="about__container reveal">
@@ -46,7 +47,7 @@ export default function ProyectoAguas() {
           </p>
           <a
             className="footer__btn"
-            href="https://wa.me/5493454936747?text=Hola%20!%20Vengo%20del%20sitio%20Vivero%20Green."
+            href="https://wa.me/5493454936747?text=Hola!%20Quiero%20iniciar%20mi%20proyecto."
             target="_blank"
             rel="noreferrer"
           >

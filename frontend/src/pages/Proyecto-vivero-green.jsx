@@ -1,20 +1,21 @@
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import BlurCarousel from "../components/BlurCarousel";
+import BotonFlotante from "../components/BotonFlotante";
 
 export default function ProyectoViveroGreen() {
   useRevealOnScroll();
 
   const images = [
     // Admin
-    { src: "/vivero1.png", alt: "Vivero Green - 1" },
-    { src: "/vivero2.png", alt: "Vivero Green - 2" },
-    { src: "/vivero3.png", alt: "Vivero Green - 3", style: { paddingLeft: "9rem", paddingRight: "9rem" } },
-    { src: "/vivero4.png", alt: "Vivero Green - 4" },
-    { src: "/vivero5.png", alt: "Vivero Green - 5" },
-    { src: "/vivero6.png", alt: "Vivero Green - 6" },
-    { src: "/vivero7.png", alt: "Vivero Green - 7", style: { paddingLeft: "9rem", paddingRight: "9rem" } },
-    { src: "/vivero8.png", alt: "Vivero Green - 8" },
-    { src: "/vivero9.png", alt: "Vivero Green - 9" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705904/vivero1_vtsqpn.png", alt: "Vivero Green - 1" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705906/vivero2_hpwrer.png", alt: "Vivero Green - 2" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705908/vivero3_kthlvh.png", alt: "Vivero Green - 3", style: { paddingLeft: "9rem", paddingRight: "9rem" } },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705909/vivero4_hfjlwq.png", alt: "Vivero Green - 4" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705912/vivero5_ujudyn.png", alt: "Vivero Green - 5" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705913/vivero6_rdoruc.png", alt: "Vivero Green - 6" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705915/vivero7_ll2804.png", alt: "Vivero Green - 7", style: { paddingLeft: "9rem", paddingRight: "9rem" } },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705916/vivero8_gsqgub.png", alt: "Vivero Green - 8" },
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/v1771705916/vivero9_cnll4w.png", alt: "Vivero Green - 9" },
   ];
 
   return (
@@ -28,7 +29,7 @@ export default function ProyectoViveroGreen() {
           </p>
         </div>
       </section>
-
+      <BotonFlotante />
       {/* CARRUSEL ÚNICO */}
       <section className="about proy">
         <div className="about__container reveal">
@@ -54,7 +55,7 @@ export default function ProyectoViveroGreen() {
           </p>
           <a
             className="footer__btn"
-            href="https://wa.me/5493454936747?text=Hola%20!%20Vengo%20del%20sitio%20Vivero%20Green."
+            href="https://wa.me/5493454936747?text=Hola!%20Quiero%20iniciar%20mi%20proyecto."
             target="_blank"
             rel="noreferrer"
           >
