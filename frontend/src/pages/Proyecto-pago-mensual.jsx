@@ -2,25 +2,15 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import BlurCarousel from "../components/BlurCarousel";
 import BotonFlotante from "../components/BotonFlotante";
 
-export default function ProyectoSupermarket() {
+export default function ProyectoMensualidad() {
   useRevealOnScroll();
 
   const images = [
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705896/market1_egytn4.png",
-      bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705896/market1_egytn4.png",
-      alt: "Supermarket - 1" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705897/market2_tkpruv.png",
-      bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705897/market2_tkpruv.png",
-      alt: "Supermarket - 2" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705897/market3_tz3ldk.png",
-      bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705897/market3_tz3ldk.png",
-      alt: "Supermarket - 3" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705898/market4_qndzej.png",
-      bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705898/market4_qndzej.png",
-      alt: "Supermarket - 4" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705899/market5_hpoblu.png",
-      bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705899/market5_hpoblu.png",
-      alt: "Supermarket - 5" },
+    { src: "#", alt: "Mensualidad - 1" },
+    { src: "#", alt: "Mensualidad - 2" },
+    { src: "#", alt: "Mensualidad - 3" },
+    { src: "#", alt: "Mensualidad - 4" },
+    { src: "#", alt: "Mensualidad - 5" },
   ];
 
   return (

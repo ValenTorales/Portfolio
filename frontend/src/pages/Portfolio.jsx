@@ -178,7 +178,7 @@ export default function Portfolio() {
 
       <section className="about">
         <div className="about__container reveal">
-          <h2>Software a medida</h2>
+          <h2>Otros Proyectos</h2>
 
           <div className="grid grid-2-md grid-3-lg">
             <article className="dest project project--compact">

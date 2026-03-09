@@ -16,6 +16,7 @@ export default function BlurCarousel({ images = [], height = 520 }) {
 
   const hasMany = safeImages.length > 1;
   const current = safeImages[index] || safeImages[0];
+  const isFirstSlide = index === 0;
 
   const prev = () => {
     if (!hasMany) return;
@@ -27,38 +28,35 @@ export default function BlurCarousel({ images = [], height = 520 }) {
     setIndex((i) => (i === safeImages.length - 1 ? 0 : i + 1));
   };
 
-  // ✅ cada vez que cambia el src, mostramos loader
   useEffect(() => {
     if (!current?.src) return;
     setIsLoading(true);
   }, [current?.src]);
 
-  // ✅ preload next/prev (recomendado)
+  // Preload solo la siguiente imagen
   useEffect(() => {
-    if (!safeImages.length) return;
+    if (!safeImages.length || !hasMany) return;
+
     const nextIndex = (index + 1) % safeImages.length;
-    const prevIndex = (index - 1 + safeImages.length) % safeImages.length;
+    const nextSrc = safeImages[nextIndex]?.src;
 
-    [safeImages[nextIndex]?.src, safeImages[prevIndex]?.src].forEach((src) => {
-      if (!src) return;
-      const img = new Image();
-      img.src = src;
-    });
-  }, [index, safeImages]);
+    if (!nextSrc) return;
 
-  // Keyboard navigation
+    const img = new Image();
+    img.src = nextSrc;
+  }, [index, safeImages, hasMany]);
+
   useEffect(() => {
     const onKey = (e) => {
       if (!hasMany) return;
       if (e.key === "ArrowLeft") prev();
       if (e.key === "ArrowRight") next();
     };
+
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasMany]);
 
-  // Touch swipe
   const onTouchStart = (e) => {
     const t = e.touches?.[0];
     if (!t) return;
@@ -67,6 +65,7 @@ export default function BlurCarousel({ images = [], height = 520 }) {
 
   const onTouchEnd = (e) => {
     if (!hasMany || !touch.current.active) return;
+
     const t = e.changedTouches?.[0];
     if (!t) return;
 
@@ -76,6 +75,7 @@ export default function BlurCarousel({ images = [], height = 520 }) {
     if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
       dx > 0 ? prev() : next();
     }
+
     touch.current.active = false;
   };
 
@@ -88,18 +88,19 @@ export default function BlurCarousel({ images = [], height = 520 }) {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
       aria-roledescription="carousel"
+      
     >
-      {/* background blur */}
-      <div
-        className="bcar__bg"
-        style={{ backgroundImage: `url(${current.src})` }}
-        aria-hidden="true"
-      />
+      {/* background blur liviano */}
+      {current.bgSrc && (
+        <div
+          className="bcar__bg"
+          style={{ backgroundImage: `url(${current.bgSrc})` }}
+          aria-hidden="true"
+        />
+      )}
 
-      {/* gradient */}
       <div className="bcar__shade" aria-hidden="true" />
 
-      {/* ✅ LOADER OVERLAY (jimu) */}
       {isLoading && (
         <div className="bcar__loaderOverlay" aria-hidden="true">
           <div className="loader">
@@ -108,21 +109,22 @@ export default function BlurCarousel({ images = [], height = 520 }) {
         </div>
       )}
 
-      {/* main image */}
       <img
-        key={current.src} // ✅ evita que quede la anterior pintada
+        key={current.src}
         className={`bcar__img ${isLoading ? "is-loading" : "is-loaded"}`}
         src={current.src}
         alt={current.alt || ""}
         style={current.style}
         onLoad={() => setIsLoading(false)}
         onError={() => setIsLoading(false)}
-        loading="eager"
+        loading={isFirstSlide ? "eager" : "lazy"}
+        fetchPriority={isFirstSlide ? "high" : "auto"}
         decoding="async"
         draggable="false"
+        width={current.width || 1600}
+        height={current.height || 900}
       />
 
-      {/* controls */}
       {hasMany && (
         <>
           <button
