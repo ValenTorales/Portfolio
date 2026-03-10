@@ -6,19 +6,19 @@ export default function ProyectoSupermarket() {
   useRevealOnScroll();
 
   const images = [
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705896/market1_egytn4.png",
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705896/market1_egytn4.png",
       bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705896/market1_egytn4.png",
       alt: "Supermarket - 1" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705897/market2_tkpruv.png",
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705897/market2_tkpruv.png",
       bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705897/market2_tkpruv.png",
       alt: "Supermarket - 2" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705897/market3_tz3ldk.png",
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705897/market3_tz3ldk.png",
       bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705897/market3_tz3ldk.png",
       alt: "Supermarket - 3" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705898/market4_qndzej.png",
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705898/market4_qndzej.png",
       bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705898/market4_qndzej.png",
       alt: "Supermarket - 4" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/f_webp,q_auto/v1771705899/market5_hpoblu.png",
+    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705899/market5_hpoblu.png",
       bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705899/market5_hpoblu.png",
       alt: "Supermarket - 5" },
   ];

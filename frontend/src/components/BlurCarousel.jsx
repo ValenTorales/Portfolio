@@ -12,7 +12,9 @@ export default function BlurCarousel({ images = [], height = 520 }) {
 
   const [index, setIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+
   const touch = useRef({ x: 0, y: 0, active: false });
+  const imgRef = useRef(null);
 
   const hasMany = safeImages.length > 1;
   const current = safeImages[index] || safeImages[0];
@@ -30,10 +32,17 @@ export default function BlurCarousel({ images = [], height = 520 }) {
 
   useEffect(() => {
     if (!current?.src) return;
+
     setIsLoading(true);
+
+    const img = imgRef.current;
+
+    if (img && img.complete && img.naturalWidth > 0) {
+      setIsLoading(false);
+    }
   }, [current?.src]);
 
-  // Preload solo la siguiente imagen
+  // preload solo de la siguiente imagen
   useEffect(() => {
     if (!safeImages.length || !hasMany) return;
 
@@ -88,9 +97,7 @@ export default function BlurCarousel({ images = [], height = 520 }) {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
       aria-roledescription="carousel"
-      
     >
-      {/* background blur liviano */}
       {current.bgSrc && (
         <div
           className="bcar__bg"
@@ -110,6 +117,7 @@ export default function BlurCarousel({ images = [], height = 520 }) {
       )}
 
       <img
+        ref={imgRef}
         key={current.src}
         className={`bcar__img ${isLoading ? "is-loading" : "is-loaded"}`}
         src={current.src}

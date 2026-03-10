@@ -509,9 +509,6 @@ h2 {
   display: flex;
   transition: all 0.6s ease;
 }
-.button-flotante:hover svg {
-  transform: translateX(5px);
-}
 
 
 .grid { display: grid; gap: 1.5rem; }
