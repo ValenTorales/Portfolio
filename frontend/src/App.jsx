@@ -8,6 +8,7 @@ import ProyectoAlcorte from "./pages/Proyecto-alcorte.jsx";
 import ProyectoJervalt from "./pages/Proyecto-jervalt.jsx";
 import ProyectoAguas from "./pages/Proyecto-agua-carlitos.jsx";
 import ProyectoSupermarket from "./pages/Proyecto-supermarket.jsx";
+import ProyectoListas from "./pages/Proyecto-listas.jsx";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/proyecto-jervalt" element={<ProyectoJervalt />} />
             <Route path="/proyecto-agua-carlitos" element={<ProyectoAguas />} />
             <Route path="/proyecto-supermarket" element={<ProyectoSupermarket />} />
+            <Route path="/proyecto-listas" element={<ProyectoListas />} />
           </Routes>
         </main>
       </div>

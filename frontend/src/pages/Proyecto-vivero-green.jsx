@@ -54,7 +54,7 @@ export default function ProyectoViveroGreen() {
           <BlurCarousel images={images} height={650} />
         </div>
 
-        <div className="about__container reveal">
+        <div className="about__container reveal base">
           <p>
             Plataforma completa con panel de administración, vista de cliente y
             diseño totalmente responsivo para una experiencia óptima en

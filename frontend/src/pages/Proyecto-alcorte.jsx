@@ -49,7 +49,7 @@ export default function ProyectoAlcorte() {
           <BlurCarousel images={images} height={650} />
         </div>
 
-        <div className="about__container reveal">
+        <div className="about__container reveal base">
           <p>
             Sistema de reservas en línea que permite a los clientes seleccionar servicios, elegir horarios disponibles y recibir confirmaciones automáticas por correo electrónico.
           </p>

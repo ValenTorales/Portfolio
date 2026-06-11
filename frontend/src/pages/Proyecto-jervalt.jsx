@@ -45,7 +45,7 @@ export default function ProyectoJervalt() {
           <BlurCarousel images={images} height={650} />
         </div>
 
-        <div className="about__container reveal">
+        <div className="about__container reveal base">
           <p>
             Proyecto desarrollado con React.js en el frontend y Node.js en el backend, utilizando SQLite como base de datos. Incluye un panel de administración para gestionar productos y catalogo.
           </p>

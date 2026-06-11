@@ -27,6 +27,9 @@ p {
 h2 {
   font-family: var(--fuente2);
 }
+.bold {
+  font-weight: 700;
+}
 
 
 .reveal{
@@ -36,6 +39,8 @@ h2 {
   transition-delay: var(--delay, 0ms); /* opcional: para “stagger” */
   will-change: opacity, transform;
 }
+
+
 .reveal.is-visible{
   opacity: 1;
   transform: none;
@@ -535,7 +540,7 @@ h2 {
   display: block;
   border-radius: 1rem;
 }
-.proy p {
+.base {
   margin-top: 2rem;
   padding-bottom: 8px;
   color: var(--pri);

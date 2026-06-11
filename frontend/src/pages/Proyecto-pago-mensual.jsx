@@ -31,7 +31,7 @@ export default function ProyectoMensualidad() {
           <BlurCarousel images={images} height={650} />
         </div>
 
-        <div className="about__container reveal">
+        <div className="about__container reveal base">
           <p>
             Dentro de este sistema nuestro cliente puede tener un control total sobre su inventario, permitiéndole agregar, editar y eliminar productos de manera sencilla. Además, el sistema registra todas las ventas realizadas, lo que facilita la gestión financiera y mejora la experiencia del cliente.
           </p>

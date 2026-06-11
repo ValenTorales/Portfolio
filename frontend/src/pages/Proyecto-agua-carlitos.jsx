@@ -46,7 +46,7 @@ export default function ProyectoAguas() {
           <BlurCarousel images={images} height={650} />
         </div>
 
-        <div className="about__container reveal">
+        <div className="about__container reveal base">
           <p>
             Dentro de este sistema nuestro cliente puede tener un control total sobre su base de datos de clientes, permitiéndole agregar, editar y eliminar información de manera sencilla. Además, el sistema genera facturas automáticas basadas en el consumo registrado, lo que facilita la gestión financiera y mejora la experiencia del cliente al ofrecer opciones de pago en línea como asi tambien una sección de reclamos.
           </p>
