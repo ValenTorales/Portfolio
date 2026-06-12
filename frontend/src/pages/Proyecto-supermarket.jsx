@@ -43,7 +43,13 @@ export default function ProyectoSupermarket() {
 
         <div className="about__container reveal base">
           <p>
-            Dentro de este sistema nuestro cliente puede tener un control total sobre su inventario, permitiéndole agregar, editar y eliminar productos de manera sencilla. Además, el sistema registra todas las ventas realizadas, lo que facilita la gestión financiera y mejora la experiencia del cliente.
+            Este <span className="bold">sistema de gestión para supermercados es una aplicación web</span> diseñada para ayudar a los propietarios y gerentes de supermercados a administrar eficientemente sus operaciones diarias.
+          </p>
+          <p>
+            El software ofrece una amplia gama de funcionalidades, incluyendo la gestión de inventario, el seguimiento de ventas, la administración de clientes y la generación de reportes detallados. Con una <span className="bold">interfaz intuitiva y fácil de usar</span>, este sistema permite a los usuarios optimizar sus procesos comerciales, mejorar la experiencia del cliente y tomar decisiones informadas basadas en datos precisos.
+          </p>
+          <p>
+            A diferencia de un <span className="bold">software instalable</span>, esta aplicación web se accede a través de un navegador, lo que significa que <span className="bold">no requiere instalación local</span> y puede ser utilizada desde <span className="bold">cualquier dispositivo con conexión a Internet</span>. Esto proporciona flexibilidad y accesibilidad para los usuarios, permitiéndoles gestionar su supermercado de manera eficiente desde cualquier lugar.
           </p>
         </div>
       </section>

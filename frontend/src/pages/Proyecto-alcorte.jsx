@@ -51,7 +51,10 @@ export default function ProyectoAlcorte() {
 
         <div className="about__container reveal base">
           <p>
-            Sistema de reservas en línea que permite a los clientes seleccionar servicios, elegir horarios disponibles y recibir confirmaciones automáticas por correo electrónico.
+            Este <span className="bold">sitio web para barbería</span> permite a los clientes reservar citas en línea, lo que mejora la experiencia del usuario al ofrecer una forma conveniente de programar sus visitas. Además, el personal de la barbería puede administrar los horarios de manera eficiente, lo que <span className="bold">optimiza la gestión de turnos</span> y mejora la organización del negocio.
+          </p>
+          <p>
+            Con esta solución digital, la barbería puede ofrecer un servicio más <span className="bold">moderno y accesible</span>, atrayendo a más clientes y mejorando la satisfacción general.
           </p>
         </div>
       </section>

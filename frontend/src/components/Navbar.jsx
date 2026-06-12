@@ -8,6 +8,7 @@ export default function Navbar() {
       <nav className="nav__links">
         <NavLink to="/" end className="nav__link">Inicio</NavLink>
         <NavLink to="/portafolio" className="nav__link">Portafolio</NavLink>
+        <NavLink to="/planes" className="nav__link">Planes</NavLink>
       </nav>
     </header>
   );

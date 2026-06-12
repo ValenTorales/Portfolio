@@ -181,6 +181,59 @@ export default function Portfolio() {
           <h2>Otros Proyectos</h2>
 
           <div className="grid grid-2-md grid-3-lg">
+
+            <article className="dest project project--compact">
+              <div className="project__media">
+                <img
+                  src="https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1781142507/Listas1_rffeez.png"
+                  alt="Listas de Productos - Software de Gestión"
+                  className="project__img --h48"
+                />
+              </div>
+
+              <div className="dest__header">
+                <h3 className="dest__title sm">Listas de Productos - Software de Gestión</h3>
+              </div>
+
+              <div className="dest__content">
+                <p className="muted small">
+                  Software de gestión de listas de productos con funcionalidades de creación, edición y eliminación de productos.
+                </p>
+
+                <div className="about__chips">
+                  <span className="chip">C# Windows Forms</span>
+                  <span className="chip">.NET Framework</span>
+                  <span className="chip">SQLite</span>
+                  <span className="chip">ClosedXML</span>
+                </div>
+
+                <div className="btns-project">
+                  <a
+                    className="btn btn--sm btn--outline btn__project"
+                    href="/proyecto-listas"
+                    target="_self"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14L21 3" />
+                    </svg>
+                    <span>Ver</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+            
             <article className="dest project project--compact">
               <div className="project__media">
                 <img
@@ -254,11 +307,11 @@ export default function Portfolio() {
 
                 <div className="about__chips">
                   <span className="chip">Node.js</span>
-                  <span className="chip">Express.js</span>
-                  <span className="chip">React.js</span>
-                  <span className="chip">Vite</span>
-                  <span className="chip">Axios</span>
+                  <span className="chip">Express</span>
                   <span className="chip">PostgreSQL</span>
+                  <span className="chip">React</span>
+                  <span className="chip">Vite</span>
+                  <span className="chip">JSON Web Token</span>
                 </div>
 
                 <div className="btns-project">
@@ -314,58 +367,6 @@ export default function Portfolio() {
                   <span className="chip">Vite</span>
                   <span className="chip">Axios</span>
                   <span className="chip">MySQL</span>
-                </div>
-
-                <div className="btns-project">
-                  <a
-                    className="btn btn--sm btn--outline btn__project"
-                    href="/proyecto-listas"
-                    target="_self"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.75"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <path d="M15 3h6v6" />
-                      <path d="M10 14L21 3" />
-                    </svg>
-                    <span>Ver</span>
-                  </a>
-                </div>
-              </div>
-            </article>
-            
-            <article className="dest project project--compact">
-              <div className="project__media">
-                <img
-                  src="https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1781142507/Listas1_rffeez.png"
-                  alt="Listas de Productos - Software de Gestión"
-                  className="project__img --h48"
-                />
-              </div>
-
-              <div className="dest__header">
-                <h3 className="dest__title sm">Listas de Productos - Software de Gestión</h3>
-              </div>
-
-              <div className="dest__content">
-                <p className="muted small">
-                  Software de gestión de listas de productos con funcionalidades de creación, edición y eliminación de productos.
-                </p>
-
-                <div className="about__chips">
-                  <span className="chip">C# Windows Forms</span>
-                  <span className="chip">.NET Framework</span>
-                  <span className="chip">SQLite</span>
-                  <span className="chip">ClosedXML</span>
                 </div>
 
                 <div className="btns-project">

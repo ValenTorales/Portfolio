@@ -24,9 +24,6 @@ export default function ProyectoAguas() {
     { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705717/aguas6_nbxvhm.png",
       bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705717/aguas6_nbxvhm.png",
       alt: "Aguas - 6" },
-    { src: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_1400,f_webp,q_auto/v1771705718/aguas7_bfqujw.png",
-      bgSrc: "https://res.cloudinary.com/dxa7jp1ew/image/upload/w_400,f_auto,q_auto/v1771705718/aguas7_bfqujw.png",
-      alt: "Aguas - 7" },
   ];
 
   return (
@@ -48,7 +45,7 @@ export default function ProyectoAguas() {
 
         <div className="about__container reveal base">
           <p>
-            Dentro de este sistema nuestro cliente puede tener un control total sobre su base de datos de clientes, permitiéndole agregar, editar y eliminar información de manera sencilla. Además, el sistema genera facturas automáticas basadas en el consumo registrado, lo que facilita la gestión financiera y mejora la experiencia del cliente al ofrecer opciones de pago en línea como asi tambien una sección de reclamos.
+            Esta <span className="bold">aplicación web para cooperativa de agua potable</span> ofrece una solución integral para la gestión de clientes, facturación, pagos en línea y reportes de consumo. Con esta plataforma, la cooperativa puede administrar eficientemente sus operaciones diarias, brindando a los clientes una experiencia conveniente y moderna.
           </p>
         </div>
       </section>

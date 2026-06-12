@@ -47,7 +47,10 @@ export default function ProyectoJervalt() {
 
         <div className="about__container reveal base">
           <p>
-            Proyecto desarrollado con React.js en el frontend y Node.js en el backend, utilizando SQLite como base de datos. Incluye un panel de administración para gestionar productos y catalogo.
+            En este caso tenemos una <span className="bold">página web</span> para un corralón-ferretería, diseñada para mostrar los productos y servicios que ofrecen. Además, cuenta con un <span className="bold">panel de administración</span> que permite al propietario gestionar el contenido del sitio de manera eficiente.
+          </p>
+          <p>
+            La página web presenta una interfaz atractiva y fácil de navegar, donde los visitantes pueden explorar el catálogo de productos y conocer los servicios disponibles. El panel de administración proporciona herramientas para actualizar el inventario y agregar nuevos productos, lo que <span className="bold">facilita la administración del negocio en línea</span>.
           </p>
         </div>
       </section>
