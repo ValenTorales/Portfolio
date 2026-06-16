@@ -25,7 +25,7 @@ export default function Planes() {
                 <h2 className="plan-card__title">Landing Page</h2>
 
                 <div className="plan-card__price">
-                    Desde $120.000
+                    Desde $75.000
                     <span>pago único</span>
                 </div>
 
@@ -53,7 +53,7 @@ export default function Planes() {
                 <h2 className="plan-card__title">Sitio Web Institucional</h2>
 
                 <div className="plan-card__price">
-                    Desde $280.000
+                    Desde $150.000
                     <span>pago único</span>
                 </div>
 
@@ -83,7 +83,7 @@ export default function Planes() {
                 <h2 className="plan-card__title">Web con Catálogo o Funciones Especiales</h2>
 
                 <div className="plan-card__price">
-                    Desde $460.000
+                    Desde $320.000
                     <span>pago único</span>
                 </div>
 
